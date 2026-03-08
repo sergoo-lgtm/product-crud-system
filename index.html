@@ -1,129 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Product CRUD System</title>
 </head>
-
 <body>
-  <div class="crud">
-    <div class="head">
-      <h2>💡cruds💡</h2>
-      <p>product management system</p>
-    </div>
+<div class="crud">
+  <div class="head">
+    <h2>💡 CRUDS 💡</h2>
+    <p>Product Management System</p>
+  </div>
 
-    <div class="inputs">
-
-      <input type="text" placeholder="title" id="title">
-
-      <div class="price">
-
-        <input type="number" onkeyup="getTotal()" placeholder="price" id="price">
-
-        <input type="number" onkeyup="getTotal()" placeholder="taxes" id="taxes">
-
-        <input type="number" onkeyup="getTotal()" placeholder="ads" id="ads">
-
-        <input type="number" onkeyup="getTotal()" placeholder="discounts" id="discounts">
-
-        <small id="total"></small>
-
-        <input type="number" placeholder="count" id="count">
-
-        <input type="text" placeholder="category" id="category">
-
-        <button id="submit">Create</button>
-
-
-      </div>
-    </div>
-
-    <div class="outputs">
-
-      <div class="searchBlock">
-        <input type="text" id="search" placeholder="search">
-        <div class="btnSearch">
-          <button id="btnsearchTitle">Sreach By Title</button>
-          <button id="btnsearchcategory">Sreach By category</button>
-        </div>
-      </div>
-      <table>
-        <tr>
-          <th>id</th>
-          <th>title</th>
-          <th>price</th>
-          <th>taxes</th>
-          <th>ads</th>
-          <th>dicount</th>
-          <th>total</th>
-          <th>category</th>
-          <th>update</th>
-          <th>delete</th>
-        </tr>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>sams</td>
-            <td>456</td>
-            <td>4564</td>
-            <td>456</td>
-            <td>456</td>
-            <td>12354</td>
-            <td>phone</td>
-            <td><button id="update">update</button></td>
-            <td><button id="delete">delete</button></td>
-
-
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>sams</td>
-            <td>456</td>
-            <td>4564</td>
-            <td>456</td>
-            <td>456</td>
-            <td>12354</td>
-            <td>phone</td>
-            <td><button id="update">update</button></td>
-            <td><button id="delete">delete</button></td>
-
-
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>sams</td>
-            <td>456</td>
-            <td>4564</td>
-            <td>456</td>
-            <td>456</td>
-            <td>12354</td>
-            <td>phone</td>
-            <td><button id="update">update</button></td>
-            <td><button id="delete">delete</button></td>
-
-
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>sams</td>
-            <td>456</td>
-            <td>4564</td>
-            <td>456</td>
-            <td>456</td>
-            <td>12354</td>
-            <td>phone</td>
-            <td><button id="update">update</button></td>
-            <td><button id="delete">delete</button></td>
-
-
-          </tr>
-        </tbody>
-      </table>
+  <div class="inputs">
+    <input type="text" placeholder="Title" id="title">
+    <div class="price">
+      <input type="number" onkeyup="getTotal()" placeholder="Price" id="price">
+      <input type="number" onkeyup="getTotal()" placeholder="Taxes" id="taxes">
+      <input type="number" onkeyup="getTotal()" placeholder="Ads" id="ads">
+      <input type="number" onkeyup="getTotal()" placeholder="Discounts" id="discounts">
+      <small id="total"></small>
+      <input type="number" placeholder="Count" id="count">
+      <input type="text" placeholder="Category" id="category">
+      <button id="submit">Create</button>
     </div>
   </div>
-  <script src="script.js"></script>
-</body>
 
+  <div class="outputs">
+    <div class="searchBlock">
+      <input type="text" id="search" placeholder="Search...">
+      <div class="btnSearch">
+        <button id="btnsearchTitle">Search By Title</button>
+        <button id="btnsearchcategory">Search By Category</button>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <th>id</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Taxes</th>
+        <th>Ads</th>
+        <th>Discount</th>
+        <th>Total</th>
+        <th>Category</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
 </html>
