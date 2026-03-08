@@ -121,7 +121,7 @@ tbody tr:hover{
     box-shadow: 0 0 25px rgba(255, 71, 225,0.9), 0 0 35px rgba(140, 53, 174,0.9) inset;
 }
 #deleteAllBtn {
-    width: 100%; /* العرض كامل */
+    width: 100%;
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
